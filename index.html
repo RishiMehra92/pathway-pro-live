@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="pathwaypro">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>pathwaypro</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="preload" href="https://t2494231.p.clickup-attachments.com/t2494231/a6ea46ae-4f6e-45ac-9ed3-339577b638b2/P1%20Loader.gif" as="image" type="image/gif">
+  <style>
+    #loader {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: black;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        #loader img {
+          width: 100px;
+          height: 100px;
+        }
+
+        body.loaded #loader {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<script src="assets/packages/libphonenumber_plugin/js/libphonenumber.js"></script>
+<script src="assets/packages/libphonenumber_plugin/js/stringbuffer.js"></script>
+
+<script   src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script   src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+<script   src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js"></script>
+
+<script>
+  const firebaseConfig = {
+      apiKey: 'AIzaSyDWQ8WOvXsTwh31FMQxksdwkt27DohL1xU',
+    appId: '1:399597499029:web:7013583b2ca9460757219c',
+    messagingSenderId: '399597499029',
+    projectId: 'pathwaypro-edda7',
+    authDomain: 'pathwaypro-edda7.firebaseapp.com',
+    storageBucket: 'pathwaypro-edda7.appspot.com',
+    measurementId: 'G-QS5HH7KXQ3',
+  };
+
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="https://meet.jit.si/external_api.js" type="application/javascript"></script>
+
+<div id="loader">
+  <img src="https://t2494231.p.clickup-attachments.com/t2494231/a6ea46ae-4f6e-45ac-9ed3-339577b638b2/P1%20Loader.gif" alt="Loading...">
+</div>
+  <script src="flutter_bootstrap.js" async></script>
+
+
+</body>
+</html>
